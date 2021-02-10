@@ -13,11 +13,12 @@ function nowServing(line) {
   if (line.length === 0) {
     return 'There is nobody waiting to be served!'
   }
-  else{
+  if (line.length !== 0){
     return `Currently serving ${line[0]}.`
-
   }
-  line.splice(0,0);
+  line.shift();
+  return line;
+
 }
 
 //Show the list of the current line.
