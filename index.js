@@ -15,9 +15,9 @@ function nowServing(line) {
   }
   else{
     return `Currently serving ${line[0]}.`
-    line.shift();
-  }
 
+  }
+  line.splice(0,0);
 }
 
 //Show the list of the current line.
