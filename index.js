@@ -11,4 +11,5 @@ function nowServing(currentLine) {
     return `Currently serving ${currentLine[0]}.`
   }
   delete currentLine[0];
+  return currentLine;
 }
